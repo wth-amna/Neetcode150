@@ -1,0 +1,4 @@
+Structures contain data so we can organize it, store and manage the data efficiently in the memory.
+Example: Array, Stacks, Queues 
+in simple -> data ko kiss tarah put krna hai memory mai ky mera code issy easily access krly
+in short(organization of data)

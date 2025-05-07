@@ -1,0 +1,10 @@
+Software -> program -> process = yeh teeno ek hi terms hain.
+
+process -> running program, joh memory (RAM) mai currently available ho.
+
+software/program is set of instructions that can be executed by computer (very basic)
+but acc to software engineer.
+software/program is some line of code that do some work (manipulation, manage, analysis, etc..) on data
+
+thats why..
+we should learn how to write *code* as well as how to manipulate *data*.

@@ -1,0 +1,8 @@
+algorithm -> kisi bhi problem ko solve karny ky liye joh bhi steps hum follow krty hain woh algorithm hota hai.
+how we work in real world??
+    1. got the problem 
+    2. find the solution (logically) !!!important step (we should know the solution! without the solution we can't code obv, so everytime when coding, think of the solution first rather then the implementation)
+    solution -> algorithm 
+    3. Implement that solution through code
+algorithms mai hum data structures use krty hain.
+jitna organize data, utna hi behtar algorithm ka result.
