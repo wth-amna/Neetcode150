@@ -2,3 +2,7 @@ Structures contain data so we can organize it, store and manage the data efficie
 Example: Array, Stacks, Queues 
 in simple -> data ko kiss tarah put krna hai memory mai ky mera code issy easily access krly
 in short(organization of data)
+
+
+
+Whats the difference in data structure and database?

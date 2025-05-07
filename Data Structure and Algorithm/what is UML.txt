@@ -1,0 +1,138 @@
+UML(Unified Modeling Language)
+
+it's a graphical lang for visualizing, specifying, constructing, documenting information about software system
+Shows how a complete system works using diagrams.
+it also shows business modeling and other non software system (ky kahan kon interact karyga, kahan billing hogi, marketing etc..)
+Helps developers, analysts, and stakeholders understand structure, behavior, and interactions.
+
+Types of UML:
+    - Structural diagram (class dia, object dia, component dia, package dia, composite structure dia)
+    - behavioral diagram (use case dia, Activity dia, State machine dia)
+    - interaction diagram ~ kinda part of behavioral (Communication Dia, Sequence Dia, Timing Dia, interaction overview dia )
+
+1. STRUCTURE DIAGRAMS (Static part of system dikhate hain)
+Yeh diagrams system ke architecture ya structure ko show karte hain—kaunsi cheezen hain, aur kaise juri hui hain.
+sirf structure batata hai, attributes etc.. working nahi.
+
+📘 1.1 Class Diagram
+Kya dikhata hai?: Classes, unke attributes (properties), methods (functions), aur relationships (e.g., inheritance, association).
+
+Use: Object-oriented systems ko design karne ke liye.
+
+Example: Student, Teacher, aur Course classes aur unke beech ke connections.
++-------------+           +-------------+
+|  Student    |           |   Course    |
++-------------+           +-------------+
+| -name       |           | -title      |
+| -id         |           | -code       |
++-------------+           +-------------+
+| +enroll()   |           | +addStudent()|
++-------------+           +-------------+
+        |
+        | Enrolls in
+        | (Association)
+        v
+kahan use krty hain?
+    - mostly architecture design or planning phase mai Code likhne se pehle structure samajhne ke liye
+
+🧩 1.2 Object Diagram
+Kya dikhata hai?: Real-time instances (objects) of classes.
+
+Example: Object: student1: Student with name = Ali, id = 123
+
+Hum Object Diagram is liye use karte hain kyunki yeh system ka runtime snapshot dikhata hai — yani ek specific waqt par objects ka actual data aur relationships kaise hain.
+Class diagram abstract hoti hai (sirf structure dikhati hai), jabke object diagram real data ke sath ek misal deta hai.
+Example:
+Student class ho sakti hai, lekin object diagram yeh dikhayegi ky:
+student1: Student → Name: "Ali", ID: 123
+Kab use hota hai?
+- Software analysis phase mein
+- Testing and debugging time
+- Model validation ke liye
+- Class diagrams ka practical example banane ke liye
+
++--------------------------+        +----------------------------+
+| student1: Student        |        | course1: Course            |
++--------------------------+        +----------------------------+
+| name = "Ali"             |        | title = "Mathematics"      |
+| id = 101                 |        | code = "MTH101"            |
++--------------------------+        +----------------------------+
+            |                                  ^
+            | Enrolled in                      |
+            +----------------------------------+
+
+🧱 1.3 Component Diagram
+Kya dikhata hai?: Software components (like modules, services) aur unke interactions.
+
+Use: Large applications mein dependencies aur High-level architecture dikhana.
+Yeh dikhane ke liye ke kaunsa component kis module/service/class/file ko use kar raha hai
+Example: Login module connects to Authentication Service.
+
+Kahan Use Karte Hain?
+    - Software Engineering Projects (especially large systems) Large software ko components mein divide karna ho
+    - Deployment ya integration planning karni ho ( DevOps / CI-CD pipelines mein deployment planning ke liye)
+    - Microservices architecture design
+    - Desktop or web applications development
+    - System documentation ke liye
+   
+
+[User Interface] ──> [Order Processing] ──> [Payment Gateway]
+                                │
+                                ▼
+                           [Database]
+
+User Interface interacts with Order Processing -> Order Processing uses Payment Gateway -> Both Order Processing and Payment store data in Database
+
+2. BEHAVIOR DIAGRAMS (Dynamic behavior ya flow show karte hain)
+Yeh diagrams yeh batate hain ke system kaise kaam karta hai, kis order mein cheezein hoti hain, aur user/system ka kya interaction hota hai.
+
+🎯 2.1 Use Case Diagram
+System ka external behavior—kya-kya kaam karta hai, aur kaun karta hai (actor).
+Use: Requirements gathering ke liye.
+Jab hume client ko dikhana ho ke system kya karega, kaise nahi
+Software project ke start mein
+Non-technical stakeholders ke sath communication ke liye
+
+Actor: Student
+Use Cases:                              
+  - Login
+  - Search Book
+  - Borrow Book
+  - Return Book
+
+🔁 2.2 Activity Diagram
+system ke workflow ya process flow ko show karta hai — like a flowchart, lekin software process ke liye.
+Use: Business processes, algorithms ya logic ko describe karna.
+Use case ke steps ko detail mein explain karne ke liye
+Testing aur process validation mein
+
+Start → Login → Search Book
+         ↓
+    [Book Available?] — Yes → Borrow Book → Update Record → End
+                          ↓
+                         No → Show "Not Available" → End
+
+
+📩 3.1. Sequence Diagram
+Sequence Diagram show karta hai ke objects/actors ke beech messages kis order mein bheje jaate hain — i.e., "who talks to whom and when".
+🔹 Kahan & Kab use karte hain?
+Use case execution ka step-by-step interaction (Object interactions aur method calls) dikhane ke liye
+Code likhne se pehle function call sequence plan karne ke liye
+Real-time systems ya web service communication mein
+
+User → Login Page: enterCredentials()
+Login Page → Auth Service: authenticate()
+Auth Service → DB: fetchUser()
+DB → Auth Service: return user info
+Auth Service → Login Page: success/fail
+Login Page → User: show message
+
+
+ELEMENTS USED:
+Class Diagram – Classes, attributes, methods, relationships (association, inheritance).
+Object Diagram – Object instances, attribute values, and links between objects.
+Component Diagram – Components, interfaces, dependencies, connectors (ball, socket).
+Use Case Diagram – Actors, use cases, system boundary, relationships (include, extend).
+Activity Diagram – Actions, control flows, decision nodes, start/end nodes, forks/joins.
+Sequence Diagram – Lifelines, messages, activation bars, objects, loops/conditions.
+State Machine Diagram – States, transitions, events, actions, initial/final states

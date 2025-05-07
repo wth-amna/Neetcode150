@@ -6,3 +6,9 @@ how we work in real world??
     3. Implement that solution through code
 algorithms mai hum data structures use krty hain.
 jitna organize data, utna hi behtar algorithm ka result.
+
+Properties of algorithm:
+every algo should contain these things:
+    1. Input (taky user ky according result mily, but its optional). It maybe possible to design algo without user input
+    2. Output/Result (must) Algo should produce some result so we can display, save or send that result to another algo
+    3. Definiteness (algo should precise with define/usefull no. of steps)

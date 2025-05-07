@@ -4,7 +4,24 @@ process -> running program, joh memory (RAM) mai currently available ho.
 
 software/program is set of instructions that can be executed by computer (very basic)
 but acc to software engineer.
-software/program is some line of code that do some work (manipulation, manage, analysis, etc..) on data
+software/program is some lines of code that do some work (manipulation, manage, analysis, etc..) on data
 
 thats why..
 we should learn how to write *code* as well as how to manipulate *data*.
+
+
+Pseudocode -> plain language description of the algorithm steps
+
+its not standardized thats why it could create confusions if share with other people
+so we have flowcharts (standard set by ANSI) that represent the flow graphically to any technical person, 
+so anyone could understand whats would be the flow of algorithm
+where and who use flowcharts?
+ - used by software developers, Business analysts, project managers
+ - suitable for module-level working and shows internal logic of a single function
+ - not ideal for the large system qk kafi complex or cluttered ho jaty hain
+flowchart lacks software modeling (steps konsy hongy, konsa model lagyga..waterfall, agile etc)
+can't provide detailed overview of the events (ager ghlt input dydiya tou kia)
+No object-oriented support: (classes, inheritance etc..nahi show karpaty)
+Sirf process flow dikhate hain—na system structure, na interactions. (ky kiss ny login kiya admin ya user etc)
+
+thats why we have UML (check what is UML.txt)
