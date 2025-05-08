@@ -6,3 +6,8 @@ in short(organization of data)
 
 
 Whats the difference in data structure and database?
+
+Data Structures are used within programs to store data temporarily in memory(RAM) and manipulate it efficiently.
+it is managed by code
+Databases are used to store large amounts of data permanently (in persistent storage or hard disk) and provide tools to manage and access it.
+it is managed by dbms (Oracle, MYSQL etc)

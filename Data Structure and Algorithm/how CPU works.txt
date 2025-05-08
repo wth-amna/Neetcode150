@@ -1,0 +1,6 @@
+The moment we turnon computer -> BIOS Load hoti hain -> BOOT Program run hota hai -> Kernal Load hota hai -> operating system
+BIOS (check krta hai ky sary connected components sahi hain ya nahi)
+Boot program (external bootable devices ko check krta hy)
+Kernal/Firmware (Operating system ko load krta hai)
+
+firmware(they are softwares that communicate with hardware)
